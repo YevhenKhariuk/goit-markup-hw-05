@@ -29,7 +29,9 @@
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link current">Студия</a>
+              <a href="./index.html" class="header-link link current active"
+                >Студия</a
+              >
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link link">Портфолио</a>
@@ -63,7 +65,9 @@
       <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-logo">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="benefits">
@@ -132,6 +136,7 @@
                 width="370"
                 class="prices-image"
               />
+              <h2 class="prices-top-text">Десктопные приложения</h2>
             </li>
             <li class="prices-item">
               <img
@@ -140,6 +145,7 @@
                 width="370"
                 class="prices-image"
               />
+              <p class="prices-top-text">Мобильные приложения</p>
             </li>
             <li class="prices-item">
               <img
@@ -148,6 +154,7 @@
                 width="370"
                 class="prices-image"
               />
+              <p class="prices-top-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -423,5 +430,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="button-close" data-modal-close>
+          <svg class="icon icon-close" width="18" height="18">
+            <use xlink:href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
